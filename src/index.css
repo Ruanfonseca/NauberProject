@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 126 30% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 126 30% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 126 30% 10%;
+
+    --primary: 126 92% 29%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 126 20% 96%;
+    --secondary-foreground: 126 30% 10%;
+
+    --muted: 126 15% 95%;
+    --muted-foreground: 126 15% 40%;
+
+    --accent: 126 92% 29%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 126 15% 90%;
+    --input: 126 15% 90%;
+    --ring: 126 92% 29%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens - Green theme */
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(126, 92%, 29%) 0%,
+      hsl(126, 90%, 20%) 100%
+    );
+    --gradient-accent: linear-gradient(
+      135deg,
+      hsl(126, 92%, 34%) 0%,
+      hsl(126, 92%, 25%) 100%
+    );
+    --gradient-card: linear-gradient(
+      180deg,
+      hsl(0, 0%, 100%) 0%,
+      hsl(126, 20%, 98%) 100%
+    );
+    --gradient-dark: linear-gradient(
+      180deg,
+      hsl(126, 30%, 10%) 0%,
+      hsl(126, 35%, 6%) 100%
+    );
+    --gradient-light: linear-gradient(
+      180deg,
+      hsl(126, 20%, 98%) 0%,
+      hsl(0, 0%, 100%) 100%
+    );
+
+    --shadow-soft: 0 4px 20px -4px hsl(126 30% 10% / 0.06);
+    --shadow-medium: 0 8px 30px -8px hsl(126 30% 10% / 0.1);
+    --shadow-strong: 0 20px 50px -15px hsl(126 30% 10% / 0.15);
+    --shadow-accent: 0 8px 30px -8px hsl(126 92% 29% / 0.3);
+    --shadow-glow: 0 0 40px hsl(126 92% 29% / 0.25);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 126 30% 10%;
+    --sidebar-primary: 126 92% 29%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 126 20% 96%;
+    --sidebar-accent-foreground: 126 30% 10%;
+    --sidebar-border: 126 15% 92%;
+    --sidebar-ring: 126 92% 29%;
+  }
+
+  .dark {
+    --background: 126 35% 6%;
+    --foreground: 0 0% 98%;
+
+    --card: 126 30% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 126 30% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 126 80% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 126 25% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 126 25% 15%;
+    --muted-foreground: 126 15% 60%;
+
+    --accent: 126 80% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 126 20% 18%;
+    --input: 126 20% 18%;
+    --ring: 126 80% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Outfit", system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-accent);
+  }
+
+  .bg-hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  .bg-accent-gradient {
+    background: var(--gradient-accent);
+  }
+
+  .bg-card-gradient {
+    background: var(--gradient-card);
+  }
+
+  .bg-dark-gradient {
+    background: var(--gradient-dark);
+  }
+
+  .bg-light-gradient {
+    background: var(--gradient-light);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-medium {
+    box-shadow: var(--shadow-medium);
+  }
+
+  .shadow-strong {
+    box-shadow: var(--shadow-strong);
+  }
+
+  .shadow-accent {
+    box-shadow: var(--shadow-accent);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  /* Modern glass effect */
+  .glass {
+    @apply bg-background/80 backdrop-blur-xl border border-border/50;
+  }
+
+  /* Subtle pattern overlay */
+  .pattern-dots {
+    background-image: radial-gradient(
+      hsl(var(--primary) / 0.08) 1px,
+      transparent 1px
+    );
+    background-size: 24px 24px;
+  }
+}
