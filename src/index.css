@@ -7,106 +7,111 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 126 30% 10%;
+    --foreground: 132 30% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 126 30% 10%;
+    --card-foreground: 132 30% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 126 30% 10%;
+    --popover-foreground: 132 30% 10%;
 
-    --primary: 126 92% 29%;
+    /* VERDE OFICIAL NAUBER */
+    --primary: 132 97% 26%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 126 20% 96%;
-    --secondary-foreground: 126 30% 10%;
+    --secondary: 132 20% 96%;
+    --secondary-foreground: 132 30% 10%;
 
-    --muted: 126 15% 95%;
-    --muted-foreground: 126 15% 40%;
+    --muted: 132 15% 95%;
+    --muted-foreground: 132 15% 40%;
 
-    --accent: 126 92% 29%;
+    --accent: 132 97% 26%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 126 15% 90%;
-    --input: 126 15% 90%;
-    --ring: 126 92% 29%;
+    --border: 132 15% 90%;
+    --input: 132 15% 90%;
+    --ring: 132 97% 26%;
 
     --radius: 0.75rem;
 
-    /* Custom tokens - Green theme */
+    /* Gradientes usando verde NAUBER */
     --gradient-hero: linear-gradient(
       135deg,
-      hsl(126, 92%, 29%) 0%,
-      hsl(126, 90%, 20%) 100%
+      hsl(132, 97%, 26%) 0%,
+      hsl(132, 97%, 18%) 100%
     );
+
     --gradient-accent: linear-gradient(
       135deg,
-      hsl(126, 92%, 34%) 0%,
-      hsl(126, 92%, 25%) 100%
+      hsl(132, 97%, 30%) 0%,
+      hsl(132, 97%, 22%) 100%
     );
+
     --gradient-card: linear-gradient(
       180deg,
       hsl(0, 0%, 100%) 0%,
-      hsl(126, 20%, 98%) 100%
+      hsl(132, 20%, 98%) 100%
     );
+
     --gradient-dark: linear-gradient(
       180deg,
-      hsl(126, 30%, 10%) 0%,
-      hsl(126, 35%, 6%) 100%
+      hsl(132, 30%, 10%) 0%,
+      hsl(132, 35%, 6%) 100%
     );
+
     --gradient-light: linear-gradient(
       180deg,
-      hsl(126, 20%, 98%) 0%,
+      hsl(132, 20%, 98%) 0%,
       hsl(0, 0%, 100%) 100%
     );
 
-    --shadow-soft: 0 4px 20px -4px hsl(126 30% 10% / 0.06);
-    --shadow-medium: 0 8px 30px -8px hsl(126 30% 10% / 0.1);
-    --shadow-strong: 0 20px 50px -15px hsl(126 30% 10% / 0.15);
-    --shadow-accent: 0 8px 30px -8px hsl(126 92% 29% / 0.3);
-    --shadow-glow: 0 0 40px hsl(126 92% 29% / 0.25);
+    --shadow-soft: 0 4px 20px -4px hsl(132 30% 10% / 0.06);
+    --shadow-medium: 0 8px 30px -8px hsl(132 30% 10% / 0.1);
+    --shadow-strong: 0 20px 50px -15px hsl(132 30% 10% / 0.15);
+    --shadow-accent: 0 8px 30px -8px hsl(132 97% 26% / 0.3);
+    --shadow-glow: 0 0 40px hsl(132 97% 26% / 0.25);
 
     --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 126 30% 10%;
-    --sidebar-primary: 126 92% 29%;
+    --sidebar-foreground: 132 30% 10%;
+    --sidebar-primary: 132 97% 26%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 126 20% 96%;
-    --sidebar-accent-foreground: 126 30% 10%;
-    --sidebar-border: 126 15% 92%;
-    --sidebar-ring: 126 92% 29%;
+    --sidebar-accent: 132 20% 96%;
+    --sidebar-accent-foreground: 132 30% 10%;
+    --sidebar-border: 132 15% 92%;
+    --sidebar-ring: 132 97% 26%;
   }
 
   .dark {
-    --background: 126 35% 6%;
+    --background: 132 35% 6%;
     --foreground: 0 0% 98%;
 
-    --card: 126 30% 10%;
+    --card: 132 30% 10%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 126 30% 10%;
+    --popover: 132 30% 10%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 126 80% 40%;
+    --primary: 132 90% 40%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 126 25% 15%;
+    --secondary: 132 25% 15%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 126 25% 15%;
-    --muted-foreground: 126 15% 60%;
+    --muted: 132 25% 15%;
+    --muted-foreground: 132 15% 60%;
 
-    --accent: 126 80% 40%;
+    --accent: 132 90% 40%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 126 20% 18%;
-    --input: 126 20% 18%;
-    --ring: 126 80% 40%;
+    --border: 132 20% 18%;
+    --input: 132 20% 18%;
+    --ring: 132 90% 40%;
   }
 }
 
@@ -180,12 +185,12 @@
     box-shadow: var(--shadow-glow);
   }
 
-  /* Modern glass effect */
+  /* Glass moderno */
   .glass {
     @apply bg-background/80 backdrop-blur-xl border border-border/50;
   }
 
-  /* Subtle pattern overlay */
+  /* Pattern pontilhado */
   .pattern-dots {
     background-image: radial-gradient(
       hsl(var(--primary) / 0.08) 1px,
