@@ -2,21 +2,21 @@ import { ArrowUpRight, MapPin, Phone, Mail, Clock } from "lucide-react";
 import LogoOficial from "@/assets/LogoBranca.png";
 
 const lojas = [
-  {
-    nome: "Loja Campo Grande - Monteiro",
-    endereco: "Estr. do Monteiro, 967 - Campo Grande, RJ, 23045-831",
-    email: "contato@casadoviana.com",
-  },
-  {
-    nome: "Loja Estrada do Pré",
-    endereco: "Rua Mora, 674 - Campo Grande, RJ, 23052-510",
-    email: "mkcasadoviana@hotmail.com",
-  },
-  {
-    nome: "Loja Realengo",
-    endereco: "R. Gen. Azeredo, 849 - Realengo, RJ, 21765-000",
-    email: "contato@casadoviana.com",
-  },
+  // {
+  //   nome: "Loja Campo Grande - Monteiro",
+  //   endereco: "Estr. do Monteiro, 967 - Campo Grande, RJ, 23045-831",
+  //   email: "contato@casadoviana.com",
+  // },
+  // {
+  //   nome: "Loja Estrada do Pré",
+  //   endereco: "Rua Mora, 674 - Campo Grande, RJ, 23052-510",
+  //   email: "mkcasadoviana@hotmail.com",
+  // },
+  // {
+  //   nome: "Loja Realengo",
+  //   endereco: "R. Gen. Azeredo, 849 - Realengo, RJ, 21765-000",
+  //   email: "contato@casadoviana.com",
+  // },
   {
     nome: "Loja Recreio dos Bandeirantes",
     endereco: "R. Gen. Landri Gonçalves, 305 - Recreio, RJ, 22795-410",
