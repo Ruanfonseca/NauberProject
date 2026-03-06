@@ -93,45 +93,51 @@ const FinalCTA = () => {
           </div>
 
           {/* Lojas Grid */}
-          <div className="grid sm:grid-cols-2 gap-4 mb-12 text-left">
-            {lojas.map((loja, index) => (
-              <div
-                key={index}
-                className="bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 rounded-2xl p-5 hover:bg-primary-foreground/15 transition-all"
-              >
-                <h3 className="font-display font-bold text-primary-foreground text-base mb-3">
-                  {loja.nome}
-                </h3>
-                <div className="space-y-2 text-sm">
-                  <div className="flex items-start gap-2 text-primary-foreground/80">
-                    <MapPin className="w-4 h-4 mt-0.5 shrink-0" />
-                    <span>{loja.endereco}</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-primary-foreground/80">
-                    <Phone className="w-4 h-4 shrink-0" />
-                    <a
-                      href={`tel:+55${loja.telefone.replace(/\D/g, "")}`}
-                      className="hover:text-primary-foreground transition-colors"
-                    >
-                      {loja.telefone}
-                    </a>
-                  </div>
-                  <div className="flex items-center gap-2 text-primary-foreground/80">
-                    <Mail className="w-4 h-4 shrink-0" />
-                    <a
-                      href={`mailto:${loja.email}`}
-                      className="hover:text-primary-foreground transition-colors"
-                    >
-                      {loja.email}
-                    </a>
-                  </div>
-                  <div className="flex items-center gap-2 text-primary-foreground/80">
-                    <Clock className="w-4 h-4 shrink-0" />
-                    <span>{loja.horario}</span>
+          <div className="flex justify-center mb-12">
+            <div className="grid gap-4 text-left w-full max-w-md">
+              {lojas.map((loja, index) => (
+                <div
+                  key={index}
+                  className="bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 rounded-2xl p-5 hover:bg-primary-foreground/15 transition-all"
+                >
+                  <h3 className="font-display font-bold text-primary-foreground text-base mb-3">
+                    {loja.nome}
+                  </h3>
+
+                  <div className="space-y-2 text-sm">
+                    <div className="flex items-start gap-2 text-primary-foreground/80">
+                      <MapPin className="w-4 h-4 mt-0.5 shrink-0" />
+                      <span>{loja.endereco}</span>
+                    </div>
+
+                    <div className="flex items-center gap-2 text-primary-foreground/80">
+                      <Phone className="w-4 h-4 shrink-0" />
+                      <a
+                        href={`tel:+55${loja.telefone.replace(/\D/g, "")}`}
+                        className="hover:text-primary-foreground transition-colors"
+                      >
+                        {loja.telefone}
+                      </a>
+                    </div>
+
+                    <div className="flex items-center gap-2 text-primary-foreground/80">
+                      <Mail className="w-4 h-4 shrink-0" />
+                      <a
+                        href={`mailto:${loja.email}`}
+                        className="hover:text-primary-foreground transition-colors"
+                      >
+                        {loja.email}
+                      </a>
+                    </div>
+
+                    <div className="flex items-center gap-2 text-primary-foreground/80">
+                      <Clock className="w-4 h-4 shrink-0" />
+                      <span>{loja.horario}</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
           {/* Trust Badges */}
@@ -139,16 +145,16 @@ const FinalCTA = () => {
             <p className="text-primary-foreground/60 text-xs mb-6 uppercase tracking-wider">
               Garantias Nauber
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
               {[
                 { icon: Shield, label: "Garantia", value: "1 Ano" },
                 { icon: Headphones, label: "Suporte", value: "Especializado" },
-                // { icon: Truck, label: "Entrega", value: "Todo Brasil" },
                 { icon: CreditCard, label: "Pagamento", value: "Facilitado" },
               ].map((item, index) => (
                 <div
                   key={index}
-                  className="text-center p-3 rounded-xl bg-primary-foreground/5 backdrop-blur-sm"
+                  className="text-center p-5 rounded-xl bg-primary-foreground/5 backdrop-blur-sm border border-primary-foreground/10"
                 >
                   <item.icon className="w-6 h-6 text-primary-foreground/80 mx-auto mb-2" />
                   <p className="font-display text-lg font-bold text-primary-foreground">
