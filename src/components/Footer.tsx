@@ -56,9 +56,9 @@ const Footer = () => {
             </h4>
             <ul className="space-y-2.5">
               {[
-                { href: "#dx3", label: "DX-3" },
+                { href: "#dx5", label: "DX-5" },
                 { href: "#nb100", label: "NB-100" },
-                { href: "#comparativo", label: "Comparativo" },
+                { href: "#beneficios", label: "Benefícios" },
               ].map((link) => (
                 <li key={link.href}>
                   <a

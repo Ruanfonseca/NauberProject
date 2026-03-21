@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Zap, Clock, TrendingUp, CheckCircle } from "lucide-react";
-import dx3Hero from "@/assets/dx3-front.jpg";
+import dx5Hero from "@/assets/d5x-frente.png";
 
 const Hero = () => {
   return (
@@ -51,7 +51,7 @@ const Hero = () => {
               className="text-base md:text-lg text-primary-foreground/75 mb-8 max-w-xl mx-auto lg:mx-0 animate-fade-in leading-relaxed"
               style={{ animationDelay: "0.2s" }}
             >
-              As máquinas Nauber DX-3 e NB-100 revolucionam a pintura
+              As máquinas Nauber D-5X e NB-100 revolucionam a pintura
               profissional. Mais velocidade, mais economia, mais lucro para o
               seu negócio.
             </p>
@@ -110,16 +110,16 @@ const Hero = () => {
           >
             <div className="absolute inset-0 bg-primary-foreground/10 rounded-[2rem] blur-3xl transform rotate-6" />
             <img
-              src={dx3Hero}
-              alt="Máquina de Pintura Nauber DX-3"
+              src={dx5Hero}
+              alt="Máquina de Pintura Nauber D-5X"
               className="relative z-10 w-full max-w-lg mx-auto drop-shadow-2xl animate-float rounded-3xl"
             />
             <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-background rounded-xl px-6 py-3 shadow-strong z-20">
               <p className="font-display font-bold text-foreground text-base">
-                NAUBER DX-3
+                D-5X NAUBER
               </p>
               <p className="text-muted-foreground text-xs">
-                Pulverizador Airless Profissional
+                Airless com Sistema de Diafragma
               </p>
             </div>
           </div>

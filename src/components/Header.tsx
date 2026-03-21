@@ -53,9 +53,9 @@ const Header = () => {
 
           <nav className="hidden md:flex items-center gap-8">
             {[
-              { href: "#dx3", label: "DX-3" },
+              { href: "#dx5", label: "D-5X" },
               { href: "#nb100", label: "NB-100" },
-              { href: "#comparativo", label: "Comparativo" },
+              { href: "#beneficios", label: "Benefícios" },
               { href: "#para-quem", label: "Para Quem" },
             ].map((link) => (
               <a
@@ -82,23 +82,23 @@ const Header = () => {
             </Button>
           </div>
 
-          <button
-            className={`md:hidden p-2 transition-colors ${
-              isScrolled ? "text-foreground" : "text-primary-foreground"
-            }`}
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          {isScrolled && (
+            <button
+              className="md:hidden p-2 text-foreground transition-colors"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          )}
         </div>
 
         {isMenuOpen && (
           <div className="md:hidden py-6 border-t border-border/50 animate-fade-in bg-background/95 backdrop-blur-xl rounded-b-2xl">
             <nav className="flex flex-col gap-2">
               {[
-                { href: "#dx3", label: "DX-3" },
+                { href: "#dx5", label: "D-5X" },
                 { href: "#nb100", label: "NB-100" },
-                { href: "#comparativo", label: "Comparativo" },
+                { href: "#beneficios", label: "Benefícios" },
                 { href: "#para-quem", label: "Para Quem" },
               ].map((link) => (
                 <a

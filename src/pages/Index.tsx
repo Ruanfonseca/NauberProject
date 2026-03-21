@@ -10,26 +10,35 @@ import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import { Helmet } from "react-helmet-async";
+import DX3Section from "@/components/DX3Section";
+import NB100Section from "@/components/NB100Section";
 
 const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Nauber DX-3 e NB-100 | Máquinas de Pintura Profissional</title>
-        <meta 
-          name="description" 
-          content="Descubra as máquinas de pintura Nauber DX-3 e NB-100. Pinte 3x mais rápido com acabamento perfeito. Ideal para pintores profissionais e construtoras." 
+        <title>Nauber D-5X e NB-100 | Máquinas de Pintura Profissional</title>
+        <meta
+          name="description"
+          content="Descubra as máquinas de pintura Nauber D-5X e NB-100. Pinte 3x mais rápido com acabamento perfeito. Ideal para pintores profissionais e construtoras."
         />
-        <meta name="keywords" content="máquina de pintura, pintura airless, Nauber DX-3, Nauber NB-100, pintura profissional, equipamento de pintura" />
+        <meta
+          name="keywords"
+          content="máquina de pintura, pintura airless, Nauber D-5X, Nauber NB-100, pintura profissional, equipamento de pintura"
+        />
       </Helmet>
-      
+
       <div className="min-h-screen bg-background">
         <Header />
         <main>
           <Hero />
+          <NB100Section />
           <MachinesSection />
+          <DX3Section />
+
           <BenefitsSection />
-          <ComparisonTable />
+
+          {/* <ComparisonTable /> */}
           <TargetAudience />
           <Gallery />
           <CasaTesteSection />
